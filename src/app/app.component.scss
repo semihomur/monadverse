@@ -1,0 +1,83 @@
+/* Global CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.game-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 75vh;
+  background: #70c5ce;
+  overflow: hidden;
+  position: relative;
+  margin:0;
+  padding: 0;
+}
+
+canvas {
+  display: block;
+}
+
+.controls {
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4caf50;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+.title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 1%; /* optional, to vertically center */
+  transform: translate(-50%, 1%); /* for full centering (horizontal and vertical) */
+  //color: white;
+}
+.header-image {
+  width: 100%;
+  height: 225px;
+  margin:0;
+  padding:0;
+  margin-bottom: -5px;
+  pointer-events: none;
+  user-select: none;
+}
+img:focus {
+  outline: none !important;
+  box-shadow: none !important ;
+}
+img:focus, img:active {
+  outline: none;
+  box-shadow: none;
+  filter: none;
+}
+img {
+  filter: none;
+}
