@@ -58,7 +58,8 @@ button:disabled {
   transform: translateX(-50%);
   top: 1%; /* optional, to vertically center */
   transform: translate(-50%, 1%); /* for full centering (horizontal and vertical) */
-  //color: white;
+  z-index: 2;
+  color: white;
 }
 .header-image {
   width: 100%;
